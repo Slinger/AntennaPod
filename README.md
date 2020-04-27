@@ -4,6 +4,8 @@ This is a fork of [AntennaPod](https://github.com/AntennaPod/AntennaPod) (a grea
 
 I will maintain this fork by releasing a new build when AntennaPod releases a new version, starting with version 1.8.1. Hopefully my changes will be pulled back into the official project, at which point this fork will no longer be necessary.
 
+For more information and an example of how Conscrypt can be bundled directly with an app, see my [Conscrypt Bundling Example](https://github.com/Slinger/Conscrypt-Bundling-Example). Ideally I would love to see an app that bundles an up to date Conscrypt and offers an API giving all other apps access to it (similar to Google's "ProviderInstaller"), which could be installed and updated through F-Droid. But until then this seems like the only solution without relying on Google's services.
+
 ## Motivation
 I was motivated to create this fork after more and more podcasts I listen to stopped working with AntennaPod (Reply All, Software Freedom Podcast, Jimquisition/Podquisition, Boston's Favorite Son, ...). This was because the device I'm using is using Android 4.4.4, which doesn't support modern cipher suites. The device is small and perfect as a dedicated podcast+music player. Running a later version of Android on it caused several issues and I also didn't want to install and rely on the proprietary Google Services to use a newer security provider.
 
