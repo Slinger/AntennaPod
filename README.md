@@ -1,8 +1,8 @@
 # AntennaPod CryptoBundle
 
-This is a fork of [AntennaPod](https://github.com/AntennaPod/AntennaPod) (a great podcast manager for Android). This fork bundles a modern security provider ([Conscrypt](https://github.com/google/conscrypt)) instead of relying on the one provided by the OS (or the proprietary provider from the Google Services). The means modern network protocols and cipher suites on all versions of Android, such as TLSv1.3. This includes old versions like Android 4.4, KitKat.
+**Starting with version 2.0.2, AntennaPod includes these changes** (see [this pull request](https://github.com/AntennaPod/AntennaPod/pull/4077) for more info). If you are using this fork and want to switch back (and you should), it should be safe to simply export the database from "AntennaPod CryptoBundle" and import it back into AntennaPod (and let it restart), as long as AntennaPod is on an equal or higher version.
 
-I will maintain this fork by releasing a new build when AntennaPod releases a new version, starting with version 1.8.1. Hopefully my changes will be pulled back into the official project, at which point this fork will no longer be necessary.
+This is a fork of [AntennaPod](https://github.com/AntennaPod/AntennaPod) (a great podcast manager for Android). This fork bundles a modern security provider ([Conscrypt](https://github.com/google/conscrypt)) instead of relying on the one provided by the OS (or the proprietary provider from the Google Services). The means modern network protocols and cipher suites on all versions of Android, such as TLSv1.3. This includes old versions like Android 4.4, KitKat.
 
 For more information and an example of how Conscrypt can be bundled directly with an app, see my [Conscrypt Bundling Example](https://github.com/Slinger/Conscrypt-Bundling-Example). Ideally I would love to see an app that bundles an up to date Conscrypt and offers an API giving all other apps access to it (similar to Google's "ProviderInstaller"), which could be installed and updated through F-Droid. But until then this seems like the only solution without relying on Google's services.
 
